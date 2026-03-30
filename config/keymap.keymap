@@ -30,21 +30,21 @@
 
         layer_1 {
             bindings = <
-&trans  &trans     &trans  &trans     &trans     &trans                            &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans     &trans  &trans     &trans     &trans                            &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &kp LC(A)  &trans  &mkp RCLK  &mkp LCLK  &kp LC(Z)  &trans      &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &kp LC(Z)  &trans  &trans     &trans     &trans     &trans      &trans     &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
-&trans  &trans     &trans  &trans     &mkp MCLK  &kp SPACE  &kp LA(F4)  &kp RC(C)  &kp RC(V)       &trans          &trans        &trans           &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                            &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans                            &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &kp LC(A)  &trans     &mkp RCLK  &mkp LCLK  &kp LC(Z)  &trans      &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &trans     &trans     &trans     &trans      &trans     &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
+&trans  &trans     &trans     &trans     &mkp MCLK  &kp SPACE  &kp LA(F4)  &kp RC(C)  &kp RC(V)       &trans          &trans        &trans           &trans  &trans
             >;
         };
 
         layer_2 {
             bindings = <
-&trans  &trans            &trans            &trans      &trans      &trans                       &trans         &trans         &trans            &trans             &trans         &trans
-&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                   &kp LS(N6)     &kp LS(N7)     &kp LS(N8)        &kp LS(N9)         &kp LS(N0)     &trans
-&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans   &kp MINUS      &kp EQUAL      &kp LBRC          &kp RIGHT_BRACE    &kp SLASH      &trans
-&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans   &kp LS(MINUS)  &kp LS(EQUAL)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH  &trans
-&trans  &trans            &trans            &trans      &trans      &trans      &trans  &kp TAB  &kp DEL        &trans         &trans            &trans             &trans         &trans
+&trans  &trans            &trans            &trans      &trans      &trans                       &trans         &trans         &trans         &trans            &trans             &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)                   &kp LS(N6)     &kp LS(N7)     &kp LS(N8)     &kp LS(N9)        &kp LS(N0)         &trans
+&trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans   &kp MINUS      &kp EQUAL      &kp COLON      &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
+&trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans   &kp LS(MINUS)  &kp LS(EQUAL)  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+&trans  &trans            &trans            &trans      &trans      &trans      &trans  &kp TAB  &kp TAB        &trans         &trans         &trans            &trans             &trans
             >;
         };
 

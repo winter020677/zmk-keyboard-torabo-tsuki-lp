@@ -11,7 +11,7 @@
         bt_clear {
             bindings = <&bt BT_CLR>;
             key-positions = <28 29>;
-            layers = <2>;
+            layers = <1>;
         };
     };
 
@@ -24,17 +24,7 @@
 &trans  &kp Q      &kp W     &kp E     &kp R     &kp T                                                          &kp Y        &kp U   &kp I      &kp O     &kp P        &trans
 &trans  &kp A      &kp S     &kp D     &kp F     &kp G        &trans                     &trans                 &kp H        &kp J   &kp K      &kp L     &kp SEMI     &trans
 &trans  &kp Z      &kp X     &kp C     &kp V     &kp B        &kp TAB                    &kp DELETE             &kp N        &kp M   &kp COMMA  &kp DOT   &kp SLASH    &trans
-&trans  &kp LCTRL  &kp LGUI  &kp LALT  &kp BSPC  &lt 2 SPACE  &mt LEFT_SHIFT LANGUAGE_1  &mt RSHIFT LANGUAGE_2  &lt 3 ENTER  &trans  &trans     &kp RGUI  &lt 1 RCTRL  &trans
-            >;
-        };
-
-        layer_1 {
-            bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans                            &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &trans     &trans     &trans     &trans     &trans                            &trans          &trans          &trans        &trans           &trans  &trans
-&trans  &kp LC(A)  &trans     &mkp RCLK  &mkp LCLK  &kp LC(Z)  &trans      &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &trans     &trans     &trans     &trans      &trans     &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
-&trans  &trans     &trans     &trans     &mkp MCLK  &kp SPACE  &kp LA(F4)  &kp RC(C)  &kp RC(V)       &trans          &trans        &trans           &trans  &trans
+&trans  &kp LCTRL  &kp LGUI  &kp LALT  &kp BSPC  &lt 1 SPACE  &mt LEFT_SHIFT LANGUAGE_1  &mt RSHIFT LANGUAGE_2  &lt 3 ENTER  &trans  &trans     &kp RGUI  &lt 2 RCTRL  &trans
             >;
         };
 
@@ -45,6 +35,16 @@
 &trans  &kp N1            &kp N2            &kp N3      &kp N4      &kp N5      &trans  &trans   &kp MINUS      &kp EQUAL      &kp COLON      &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans
 &trans  &kp N6            &kp N7            &kp N8      &kp N9      &kp N0      &trans  &trans   &kp LS(MINUS)  &kp LS(EQUAL)  &kp SEMICOLON  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans  &trans            &trans            &trans      &trans      &trans      &trans  &kp TAB  &kp TAB        &trans         &trans         &trans            &trans             &trans
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &trans        &trans        &trans        &trans        &trans                            &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4  &trans                            &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &kp LC(A)     &trans        &mkp RCLK     &mkp LCLK     &kp LC(Z)  &trans      &trans     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &trans  &trans
+&trans  &kp LC(Z)     &kp LC(X)     &trans        &trans        &trans     &trans      &trans     &trans          &mkp LCLK       &mkp RCLK     &trans           &trans  &trans
+&trans  &trans        &trans        &trans        &mkp MCLK     &kp SPACE  &kp LA(F4)  &kp RC(C)  &kp RC(V)       &trans          &trans        &trans           &trans  &trans
             >;
         };
 
